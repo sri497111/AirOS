@@ -53,6 +53,8 @@ def main():
             print("Usage - echo [text]")
         elif kernel.lower() == "ls":
             print(filelist_parsed)
+        elif kernel.startswith(""):
+            continue
         else:
             print(f"{repr(kernel)} is not a recognized command, program or operation")
         
